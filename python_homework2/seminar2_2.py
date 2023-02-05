@@ -17,7 +17,7 @@ for i in range(2):
     first_d = int(input('Введите первое задуманное число: '))
     second_d = int(input('Введите второе задуманное число: '))
     if first_d + second_d == clue_s and first_d * second_d == clue_p:
-        print(f'Ура! Вы угадали {clue_s}, {clue_p}, {first_d}, {second_d}')
+        print(f'Ура! Вы угадали {first_d}, {second_d}')
     else:
         print('Не угадали!')
 print()
