@@ -10,19 +10,7 @@ task_list = list()
 for _ in range(n):
     k = int(input('Введите элемент массива: '))
     task_list.append(k)
-
 x = int(input('Введите заданное число: '))
-dif = 0
-dif_min = 10000
-for i in task_list:
-    if x != i:
-        diff = x - i
-        if dif_min > dif:
-            dif_min = dif
-    else:
-        print(i)
-
-print(dif_min)
-        
-    
-
+task_list.append(x)
+task_list = sorted(task_list)
+print(task_list[-2])
